@@ -62,7 +62,6 @@ def handle_message(message):
         reply_message = f'لینک‌های جستجو برای دسته "{CATEGORY}":\n'
         for link in video_links[:3]:
             reply_message += link.get_attribute('href') + '\n'
-            print(link)
 
         bot.send_message(message.chat.id, reply_message)
 
